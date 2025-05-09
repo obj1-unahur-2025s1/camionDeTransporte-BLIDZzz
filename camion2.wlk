@@ -12,6 +12,7 @@ object camion {
   }
 
   method cargar(unObjeto){
+    unObjeto.reaccionar()
     carga.add(unObjeto)
   }
 
@@ -51,18 +52,3 @@ object camion {
     carga.any({x=>x.peso().between(min, max)})
   }
 }
-
-
-
-object caja{
-    const lista = []
-
-    const nulls = [null, null, null, null]
-
-    method crearLista(unaCantidad){
-        nulls.taken(2)
-    }
-}
-
-
-

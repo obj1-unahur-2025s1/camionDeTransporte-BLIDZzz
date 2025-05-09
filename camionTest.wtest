@@ -1,9 +1,19 @@
+import cosas.*
 import camion.*
 
-describe "group of test for camion" {
+describe "cosas test" {
 
-  test "first test" {
-    assert.that(true)
+  test "ladrillos" {
+    camion.cargar(paquete_de_ladrillos)
+    assert.equals(2, paquete_de_ladrillos.peligrosidad())
   }
 
+  test "bateria" {
+    camion.cargar(paquete_de_ladrillos)
+    assert.equals(2, paquete_de_ladrillos.peligrosidad())
+  }
+}
+
+describe "gg"{
+  
 }
